@@ -4,12 +4,14 @@ const authMiddleware = require('./app/middlewares/auth')
 const AuthController = require('./app/controllers/AuthController')
 const StatusController = require('./app/controllers/StatusController')
 const UserController = require('./app/controllers/UserController')
+const DialogController = require('./app/controllers/DialogController')
 
 const router = new Router()
 
 router.post('/auth', AuthController.store)
 router.post('/users', UserController.store)
 router.get('/', StatusController.index)
+router.post('/dialog', DialogController.teste)
 
 // Todos os endpoints abaixo requerem autenticação
 router.use(authMiddleware)
