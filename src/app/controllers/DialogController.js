@@ -1,7 +1,7 @@
 class DialogController {
-  async teste (req, res){
-    const teste = req.body
-    res.json(teste)
+  async teste (req, res) {
+    // const teste = req.body
+    res.json({ fulfillmentText: 'displayed&spoken response' })
   }
 }
 
