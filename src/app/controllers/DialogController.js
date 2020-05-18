@@ -6,6 +6,8 @@ class DialogController {
     if (intent === 'busca.artigo') {
       res.json({ fulfillmentText: `Resposta para ${agent.parameters.artigo}` })
     }
+
+    res.json({ fulfillmentText: 'Não funcionou' })
   }
 }
 
